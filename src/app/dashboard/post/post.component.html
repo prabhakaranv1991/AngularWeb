@@ -1,0 +1,21 @@
+<form [formGroup]="postCompModel" (ngSubmit)="upload()" >
+    <table>
+        <tr>
+            <td>
+                <label>Title</label>
+                <input type="text" name="titleTxt" formControlName="title">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Story</label>
+                <textarea rows="5" cols="50" name="storyTxt" formControlName="story"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><button type="submit" >Upload</button></td>
+        </tr>
+        
+    </table>
+</form>
+
